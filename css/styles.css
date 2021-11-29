@@ -6,7 +6,6 @@
   /* Optional: Makes the sample page fill the window. */
   html,
   body {
-    height: 96.5%;
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
@@ -137,7 +136,9 @@ header p:hover {
       text-decoration: none;
       color:#006241;
   }
-
+#tooltip a:hover {
+    text-decoration: underline;
+}
   #list-layout {
       max-width: 600px;
       background-color: white;
@@ -147,18 +148,43 @@ header p:hover {
   }
   #locations {
       list-style: none;
+      margin-top: 0;
   }
   #locations li {
       line-height: 15px;
       padding: 30px 0;
       padding-top: 10px;
-      border-bottom: 1px solid black;
+      border-bottom: 1px solid rgb(214, 214, 214);
       margin-right: 35px;
   }
   #list-layout input {
-      width: 80%;
-      margin: 10px 0 10px 35px;
+      width: 82.5%;
+      margin: 30px 0 10px 35px;
       padding: 10px 15px;
       border-radius: 100px;
       border: 1px solid gray;
+      font-size: 12pt;
+      font-family: 'Open Sans', sans-serif;
+  }
+  #list-layout button {
+      border: none;
+      background-color: transparent;
+      transform: translateX(-40px);
+      color: gray;
+  }
+  #list-layout li a {
+      text-decoration: none;
+      color: #006241;
+      font-size: 10pt;
+  }
+  #list-layout li a i {
+      margin-right: 5px;
+  }
+  #list-layout li a:hover {
+    text-decoration: underline;
+  }
+  #list-bg {
+      background-image: url(../assets/tree-bg.jpeg);
+      background-repeat: repeat;
+      background-position: center;
   }
