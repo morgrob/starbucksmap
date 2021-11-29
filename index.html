@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Starbucks Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAafdZUR6ICVUlME-BMpjqDxMpSJPtrNU4"></script> -->
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <header>
+        <div id="brand">
+            <img id="starbucks" src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png" alt="Starbucks Logo">
+            <ul>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">REWARDS</a></li>
+                <li><a href="#">GIFT CARDS</a></li>
+            </ul>
+        </div>
+        <div id="right-nav">
+            <p><i class="fas fa-map-marker-alt"></i> Find a store</p>
+            <a id="sign" href="#">Sign in</a>
+            <a id="join" href="#">Join now</a>
+        </div>
+    </header>
+    <!-- <div class="list">
+        <div class="title"><p><i class="fas fa-chevron-down"></i> LIST VIEW <i class="fas fa-chevron-down"></i></p></div>
+        <input type="text" name="search" placeholder="Find a store">
+        <button for="search" type="submit"><i class="fas fa-search"></i></button>
+        <ul id="locations">
+          <li>
+              <h3>Store Name</h3>
+              <p>Store Address</p>
+              <p>Store City, State</p>
+              <p>More Info</p>
+          </li>
+        </ul>
+    </div> -->
+    <div class="btns">
+        <a id="active-view" href="#"><i class="fas fa-map"></i> Map View</a>
+        <a id="other-view" href="list.html"><i class="fas fa-list-ul"></i> List View</a>
+    </div>
+    <div id="map"></div>
+    
+    <div id="list-layout" style="display: none;">
+        <input type="text" name="search" placeholder="Find a store">
+        <button for="search" type="submit"><i class="fas fa-search"></i></button>
+        <ul id="locations">
+            <li>
+                <h3>Store Name</h3>
+                <p>Store Address</p>
+                <p>Store City, State</p>
+                <p>More Info</p>
+            </li>
+          </ul>
+    </div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAafdZUR6ICVUlME-BMpjqDxMpSJPtrNU4&callback=initMap&libraries=places&v=weekly"
+      async
+    ></script>
+  </body>
+</html>

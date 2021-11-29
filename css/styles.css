@@ -1,0 +1,164 @@
+#map {
+    height: calc(100vh - 151px);
+    width: 100vw;
+  }
+  
+  /* Optional: Makes the sample page fill the window. */
+  html,
+  body {
+    height: 96.5%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background-color: white;
+  }
+
+
+/* ------------------------------------------------------- NAVIGATION ------------------------------------------------------- */
+
+#brand {
+    display: flex;
+}
+#starbucks {
+    height: 50px;
+    width: 50px;
+    margin: 23px 0px 0px 40px;
+}
+h1 {
+    font-size: 18pt;
+}
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 101px;
+    -webkit-box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    position: relative;
+}
+#right-nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+header ul {
+    list-style: none;
+    display: flex;
+}
+header ul li {
+    margin: 22px 10px;
+}
+header ul li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.2s ease-in-out;
+}
+header ul li a:hover {
+    color: #006241;
+}
+header p {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    margin-right: 40px;
+    padding: 0 5px;
+    border-bottom: 5px solid #006241;
+    transition: 0.2s ease-in-out;
+}
+header p .fa-map-marker-alt {
+    margin: 0px 10px 0 0;
+}
+header p:hover {
+    color: #006241;
+    cursor: pointer;
+}
+#join, #sign {
+    padding: 5px 15px;
+    max-height: 20px;
+    font-size: 10pt;
+    border-radius: 100px;
+    margin: 33px 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+}
+#sign {
+    color: black;
+    border: 1px solid black;
+}
+#sign:hover {
+    background-color: #f1f1f1;
+}
+#join {
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    margin-right: 40px;
+}
+#join:hover {
+    background-color: #363636;
+}
+
+
+/* ------------------------------------------------------- LIST SLIDEOUT ------------------------------------------------------- */
+.btns {
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    background-color: rgb(248, 248, 248);
+}
+#active-view, #other-view {
+    text-decoration: none;
+    color: white;
+    font-size: 13pt;
+    width: 50%;
+    text-align: center;
+    padding: 12px 0px;
+    background-color: #006241;
+}
+#active-view i, #other-view i {
+    margin-right: 10px;
+}
+#active-view {
+    border-bottom: 6px solid #00a862;
+}
+
+  #tooltip {
+      color: black;
+      line-height: 5px;
+      overflow: hidden;
+  }
+  #tooltip a {
+      text-decoration: none;
+      color:#006241;
+  }
+
+  #list-layout {
+      max-width: 600px;
+      background-color: white;
+      margin: 0 auto;
+      color: black;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+  }
+  #locations {
+      list-style: none;
+  }
+  #locations li {
+      line-height: 15px;
+      padding: 30px 0;
+      padding-top: 10px;
+      border-bottom: 1px solid black;
+      margin-right: 35px;
+  }
+  #list-layout input {
+      width: 80%;
+      margin: 10px 0 10px 35px;
+      padding: 10px 15px;
+      border-radius: 100px;
+      border: 1px solid gray;
+  }
