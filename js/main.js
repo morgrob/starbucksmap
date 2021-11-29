@@ -210,15 +210,37 @@ function initMap() {
 
 function makeList(element) {
     var listContent =  
+    '<div class="list-content">' +
         '<h3>' + element["Store Name"] + '</h3>' +
         '<p>' + element["Street Address"] + '</p>' +
         '<p>' + element["City"] + ', ' + element["State/Province"] + '</p>' +
-        '<a href="#"><i class="fas fa-info-circle"></i> More Info</a>';
+        '<a href="#"><i class="fas fa-info-circle"></i> More Info</a>' +
+    '</div>';
     var ul = document.getElementById("locations");
     var li = document.createElement("li");
     li.innerHTML = listContent;
     ul.appendChild(li);
     console.log(ul);
+  }
+
+function searchPlaces() {
+    // Declare variables
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById('searchTerms');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("locations");
+    li = ul.getElementsByTagName('li');
+  
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+      value = li[i].getElementsByClassName("list-content")[0];
+      txtValue = value.textContent || value.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
   }
 
 // Loop through the results array and place a marker for each

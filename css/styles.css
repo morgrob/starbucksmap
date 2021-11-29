@@ -187,4 +187,5 @@ header p:hover {
       background-image: url(../assets/tree-bg.jpeg);
       background-repeat: repeat;
       background-position: center;
+      min-height: 100vh;
   }
