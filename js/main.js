@@ -9,7 +9,7 @@ function initMap() {
     mapTypeId: "terrain",
   });
 
-  fetch("../data/starbucks.json")
+  fetch("./data/starbucks.json")
     .then((res) => res.json())
     .then((json) => {
       json.forEach((element) => {
@@ -62,7 +62,7 @@ function initMap() {
 $(document).on("click", ".openContent", function (event) {
   let storeNumber = event.target.id;
 
-  fetch("../data/starbucks.json")
+  fetch("./data/starbucks.json")
     .then((res) => res.json())
     .then((json) => {
       let store = json.filter((a) => a["storeNumber"] === storeNumber)[0];
