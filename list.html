@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAafdZUR6ICVUlME-BMpjqDxMpSJPtrNU4"></script> -->
+    <!-- Remember to include jQuery :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <script src="js/main.js"></script>
   </head>
   <body id="list-bg">
@@ -54,11 +60,27 @@
         </ul>
     </div>
     <div id="map" style="display: none;"></div>
+    <div id="info" class="modal">
+      <!--Modal content from JS-->
+      <h2 id="storeName"></h2>
+      <img id="modalImg" src="https://images.complex.com/complex/images/c_fill,dpr_auto,f_auto,q_auto,w_1400/fl_lossy,pg_1/sl6bnmafxytarehzrvpu/starbucks-barista-fired-for-tweeting-crazy-drink-order-meets-customer-who-ordered-it?fimg-ssr-default" alt="Starbucks Store" style="width: 100%;">
+      <p id="storeAddress"></p>
+      <p id="cityState"></p>
+      <a href="tel" id="phone"></a>
+      <div id="number">
+          <p>Store ID: &nbsp</p>
+          <p id="storeNumber"></p>
+      </div>
+    </div>
 
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAafdZUR6ICVUlME-BMpjqDxMpSJPtrNU4&callback=initMap&libraries=places&v=weekly"
       async
     ></script>
+    
+
+
+
   </body>
 </html>

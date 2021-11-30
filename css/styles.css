@@ -33,9 +33,12 @@ header {
     justify-content: space-between;
     height: 101px;
     -webkit-box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     position: relative;
+}
+.modal {
+    color: black;
 }
 #right-nav {
     display: flex;
@@ -140,11 +143,12 @@ header p:hover {
     text-decoration: underline;
 }
   #list-layout {
-      max-width: 600px;
+      max-width: 700px;
       background-color: white;
       margin: 0 auto;
       color: black;
       box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+      padding-bottom: 30px;
   }
   #locations {
       list-style: none;
@@ -155,10 +159,10 @@ header p:hover {
       padding: 30px 0;
       padding-top: 10px;
       border-bottom: 1px solid rgb(214, 214, 214);
-      margin-right: 35px;
+      margin-right: 40px;
   }
   #list-layout input {
-      width: 82.5%;
+      width: 85%;
       margin: 30px 0 10px 35px;
       padding: 10px 15px;
       border-radius: 100px;
@@ -186,6 +190,26 @@ header p:hover {
   #list-bg {
       background-image: url(../assets/tree-bg.jpeg);
       background-repeat: repeat;
-      background-position: center;
       min-height: 100vh;
+      background-attachment: fixed;
   }
+#number {
+    display: flex;
+    flex-direction: row;
+    color: #006241;
+    font-size: 12pt;
+}
+.modal {
+    line-height: 5px;
+    font-size: 14pt;
+}
+.modal img {
+    margin: 15px 0;
+    border-radius: 5px;
+}
+#phone {
+    text-decoration: none;
+    color: #006241;
+    padding: 20px 0;
+    font-size: 12pt;
+}
