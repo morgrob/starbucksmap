@@ -117,7 +117,7 @@ header p:hover {
 #active-view, #other-view {
     text-decoration: none;
     color: white;
-    font-size: 13pt;
+    font-size: 12pt;
     width: 50%;
     text-align: center;
     padding: 12px 0px;
@@ -213,3 +213,24 @@ header p:hover {
     padding: 20px 0;
     font-size: 12pt;
 }
+#storeName {
+    font-size: 14pt;
+}
+
+@media only screen and (max-width: 800px) {
+    #right-nav {
+      display: none;
+    }
+    #list-layout li a {
+        font-size: 8pt;
+    }
+    #list-layout input {
+        font-size: 10pt;
+    }
+    #locations {
+        font-size: 10pt;
+    }
+    #active-view, #other-view {
+        font-size: 10pt;
+    }
+  }
