@@ -18,7 +18,7 @@ function initMap() {
         let latLng = new google.maps.LatLng(lat, lon);
 
         var icon = {
-          url: "../assets/mapmarker.png",
+          url: "./assets/mapmarker.png",
           scaledSize: new google.maps.Size(20, 20),
           origin: new google.maps.Point(0, 0), // origin
           anchor: new google.maps.Point(0, 0), // anchor
